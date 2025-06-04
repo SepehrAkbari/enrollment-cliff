@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber template"] 1748615964.2203 "template.bcf" "template.bbl" "template" 1748615965.4125 0
-  "references.bib" 1748615964.03408 5893 012ad8973b53b73f7dd126d0dea974f2 ""
-  "template.bcf" 1748615921.63876 108021 60b3c3fb643a1fee727f91d73f2f67fc "pdflatex"
+["biber template"] 1748809316.63968 "template.bcf" "template.bbl" "template" 1748809318.87128 0
+  "references.bib" 1748809316.38482 7338 fbbf61f3ad0a7072bb4e0317df027302 ""
+  "template.bcf" 1748807299.98226 107954 da7a95826f7b8bf9d169a83a19f00043 "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
   (rewritten before read)
-["pdflatex"] 1748615920.77993 "/Users/sepehrakbari/Projects/enrollment-cliff/paper/template.tex" "template.pdf" "template" 1748615965.41253 0
+["pdflatex"] 1748807298.05447 "/Users/sepehrakbari/Projects/enrollment-cliff/paper/template.tex" "template.pdf" "template" 1748809318.87135 0
   "/Users/sepehrakbari/Projects/enrollment-cliff/paper/template.tex" 1748533125.92879 19776 f95e7a549634b2113197e03f10dc294a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -18,7 +18,6 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm" 1136768653 6952 02ad5d201b346d62c53c35f081142949 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr9t.tfm" 1136768653 2284 861e5309a3e09d74071777f716a582cc ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplrc8r.tfm" 1136768653 3528 0711c6c96865155bce7256fa14ac59b1 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplrc9e.tfm" 1136768653 11504 0aee68a3cffe19441de3ef8908532348 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm" 1136768653 2720 70000d5e623e601132eab3cded5b819b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm" 1136768653 4636 04bb79b19bf5315ced00732a1dac5509 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -34,7 +33,6 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm" 1136768653 1316 b4037e9c09961a72f8476628774e1ec1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb" 1215737283 169201 9ebf99020dde51a5086e186761a34e8f ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb" 1546638885 62231 6fa2851364e6117779162ea79cb96ef4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb" 1136849748 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb" 1136849748 52406 dad2f72863a03727d5f536c64a69c452 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb" 1136849748 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
@@ -43,7 +41,6 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr9c.vf" 1136768653 2908 c7a03afe5d67b6476673018447828dc3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf" 1136768653 2296 bb1ff9494546688194a48c9b41b39dac ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf" 1136768653 1036 6bf3f57f140c19369dc13ae2329f0e57 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplrc9e.vf" 1136768653 2476 9ee0dbbdd2dd550350b23d6a93c7c1af ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplri9e.vf" 1136768653 2296 c260490d12463c5a352580ede007bb93 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf" 1136768653 1812 de7624743c8bafe2ce204bec2f72ce7e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf" 1136768653 1532 73e2c76c81e4f977ab65540630baf4f0 ""
@@ -138,10 +135,10 @@
   "Figures/Fibroblastid.jpg" 1748464316.36084 1196031 4586114cceabf6743681870dd8aeb612 ""
   "Figures/Tolmukapea.jpg" 1748464316.36923 653480 1eec97ed292c65b5c5bd54bfe0606110 ""
   "LTJournalArticle.cls" 1748464316.3723 9784 e38e4f05326438c9cfb0a6c6bf9f0764 ""
-  "template.aux" 1748615921.63733 4031 e91753de1f1573ef333f613eeb660da1 "pdflatex"
-  "template.bbl" 1748615965.3934 3462 f29cd340e6e4c6d07e4d2894cd627da5 "biber template"
-  "template.out" 1748615921.638 1565 59e2c02a582909cb38775fec7280f07c "pdflatex"
-  "template.run.xml" 1748615921.63932 2333 4c8a2846d538a5e482e6ccc418a47a68 "pdflatex"
+  "template.aux" 1748807299.97968 3831 15f5fc33569078ffb068fde97877e6d0 "pdflatex"
+  "template.bbl" 1748809318.83934 466 76d65a242ec496c9b4361af646ff12cb "biber template"
+  "template.out" 1748807299.98087 1565 59e2c02a582909cb38775fec7280f07c "pdflatex"
+  "template.run.xml" 1748807299.98368 2333 7a2f7cec6151bd76b6e41806b1dc4971 "pdflatex"
   "template.tex" 1748533125.92879 19776 f95e7a549634b2113197e03f10dc294a ""
   (generated)
   "template.aux"

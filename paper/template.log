@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  30 MAY 2025 09:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 JUN 2025 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -723,12 +723,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
+LaTeX Warning: Citation 'Smith:2023qr' on page 3 undefined on input line 203.
+
+
+LaTeX Warning: Citation 'Smith:2023qr' on page 3 undefined on input line 203.
+
+
+LaTeX Warning: Citation 'Smith:2024jd' on page 3 undefined on input line 203.
+
+
+LaTeX Warning: Citation 'Smith:2024jd' on page 3 undefined on input line 203.
+
+
 
 [3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./Figures/Tolmukapea.jpg>]
 
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplx/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
+
+LaTeX Warning: Empty bibliography on input line 225.
+
 
 
 [4 <./Figures/Fibroblastid.jpg>] (./template.aux)
@@ -736,25 +748,34 @@ Package microtype Info: Character `029' is missing
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 59E2C02A582909CB38775FEC7280F07C;1565.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                template
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'template.run.xml'.
 \openout1 = `template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21969 strings out of 473190
- 384079 string characters out of 5715801
- 1250494 words of memory out of 5000000
- 44491 multiletter control sequences out of 15000+600000
- 643243 words of font info for 408 fonts, out of 8000000 for 9000
+ 21904 strings out of 473190
+ 382833 string characters out of 5715801
+ 1250424 words of memory out of 5000000
+ 44454 multiletter control sequences out of 15000+600000
+ 639306 words of font info for 391 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,13n,95p,1057b,1717s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (4 pages, 1993012 bytes).
+ 81i,13n,95p,1057b,1614s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on template.pdf (4 pages, 1969691 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 137835 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 131691 words of extra memory for PDF output out of 154059 (max. 10000000)
 
