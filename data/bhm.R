@@ -1,0 +1,10 @@
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(brms)
+library(tidybayes)
+library(bayesplot)
+library(janitor)
+library(here)
+set.seed(123)
+
+df <- read_csv("data/full_data.csv")
