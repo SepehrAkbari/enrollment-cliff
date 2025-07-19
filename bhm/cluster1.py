@@ -16,21 +16,18 @@ with pt.config.change_flags(exception_verbosity='high'):
     with pm.Model() as model:
         # mu ~ N(0, 100)
         mu = pm.Normal('mu', mu=0, sigma=10)
-        ## sigma ~ Gamma(0.01, 0.01)
-        # sigma = pm.Gamma('sigma', alpha=0.01, beta=0.01)
-        # alt: InverseGamma(0.01, 0.01) for sigma (AI)
+        # sigma ~ InverseGamma(0.01, 0.01)
         sigma = pm.InverseGamma('sigma', alpha=0.01, beta=0.01)
 
-        ## x_s ~ N(mu, sigma)
-        # x_s = pm.Normal('x_s', mu=mu, sigma=sigma, shape=len(n_s))
-        ## alt: raw variable then transform 
+        # x_s ~ N(mu, sigma)
         x_s_raw = pm.Normal('x_s_raw', mu=0, sigma=1, shape=len(n_s))
         x_s = pm.Deterministic('x_s', mu + sigma * x_s_raw)
 
         # a_s ~ exp(x_s)
         a_s = pm.Deterministic('a_s', pm.math.exp(x_s))
-        # b_s ~ exp(x_s * k)
-        k = 1 # for now
+        # b_s ~ exp(x_s * k) where k is:
+            # k ~ H(mu, sigma=0.5)
+        k = pm.HalfNormal('k', sigma=0.5)
         b_s = pm.Deterministic('b_s', pm.math.exp(x_s * k))
 
         # p_s ~ Beta(a_s, b_s)
@@ -41,7 +38,7 @@ with pt.config.change_flags(exception_verbosity='high'):
 
         print("sampling multilayer model...")
 
-        trace = pm.sample(4000, tune=2000, target_accept=0.95, return_inferencedata=True, 
+        trace = pm.sample(4000, tune=2000, target_accept=0.9, return_inferencedata=True, 
                           random_seed=42, progressbar=True, max_treedepth=15)
 
 print("multilayer model convergence: ")
@@ -53,9 +50,9 @@ az.to_netcdf(trace, 'traces/trace_multilayer.nc')
 with pt.config.change_flags(exception_verbosity='high'):
     with pm.Model() as model:
         # alpha ~ Gamma(0.01, 0.01)
-        a_s = pm.Gamma('a_s', alpha=0.01, beta=0.01)
+        a_s = pm.Gamma('a_s', alpha=0.01, beta=0.01, shape=len(n_s))
         # beta ~ Gamma(0.01, 0.01)
-        b_s = pm.Gamma('b_s', alpha=0.01, beta=0.01)
+        b_s = pm.Gamma('b_s', alpha=0.01, beta=0.01, shape=len(n_s))
 
         # p_s ~ Beta(a_s, b_s)
         p_s = pm.Beta('p_s', alpha=a_s, beta=b_s, shape=len(n_s))
