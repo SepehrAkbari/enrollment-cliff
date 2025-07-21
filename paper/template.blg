@@ -1,20 +1,20 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'template.blg'
-[36] biber-darwin:340> INFO - === Wed Jun 11, 2025, 17:16:27
-[45] Biber.pm:420> INFO - Reading 'template.bcf'
-[85] Biber.pm:994> INFO - Found 2 citekeys in bib section 0
-[92] Biber.pm:4463> INFO - Processing section 0
-[98] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[99] bibtex.pm:1713> INFO - LaTeX decoding ...
-[106] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[110] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[110] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[110] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[110] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[110] bbl.pm:676> INFO - Writing 'template.bbl' with encoding 'UTF-8'
-[110] bbl.pm:779> INFO - Output to template.bbl
-[111] Biber.pm:131> WARN - Duplicate entry key: 'Campion2020' in file 'references.bib', skipping ...
-[111] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/4z/1s07dvg55sq1ks6sghlxv2rh0000gn/T/biber_tmp_775G/33e59b5ca9ec342068223d604c3f8d55_17507.utf8, line 178, warning: 49 characters of junk seen at toplevel
-[111] Biber.pm:131> WARN - I didn't find a database entry for 'Smith:2023qr' (section 0)
-[111] Biber.pm:131> WARN - I didn't find a database entry for 'Smith:2024jd' (section 0)
-[111] Biber.pm:133> INFO - WARNINGS: 4
+[37] biber-darwin:340> INFO - === Sun Jul 20, 2025, 14:29:33
+[46] Biber.pm:420> INFO - Reading 'template.bcf'
+[88] Biber.pm:994> INFO - Found 2 citekeys in bib section 0
+[95] Biber.pm:4463> INFO - Processing section 0
+[100] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[101] bibtex.pm:1713> INFO - LaTeX decoding ...
+[110] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[114] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[114] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[114] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[114] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[115] bbl.pm:676> INFO - Writing 'template.bbl' with encoding 'UTF-8'
+[115] bbl.pm:779> INFO - Output to template.bbl
+[115] Biber.pm:131> WARN - Duplicate entry key: 'Campion2020' in file 'references.bib', skipping ...
+[115] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/4z/1s07dvg55sq1ks6sghlxv2rh0000gn/T/biber_tmp_5pCx/33e59b5ca9ec342068223d604c3f8d55_45478.utf8, line 200, warning: 49 characters of junk seen at toplevel
+[115] Biber.pm:131> WARN - I didn't find a database entry for 'Smith:2023qr' (section 0)
+[115] Biber.pm:131> WARN - I didn't find a database entry for 'Smith:2024jd' (section 0)
+[115] Biber.pm:133> INFO - WARNINGS: 4

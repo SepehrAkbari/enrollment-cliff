@@ -5,12 +5,12 @@ import pytensor as pt
 
 df = pd.read_csv('data.csv', keep_default_na=False, na_values=[''])
 
-n_s = df.groupby('state')['totalByState_2020'].mean().round(0).astype(int)
-y_s = df['state'].value_counts()
+n_s = df.groupby('region')['totalByRegion_2020'].mean().round(0).astype(int)
+y_s = df['region'].value_counts()
 
-all_states = pd.Index(list(n_s.index) + list(y_s.index)).unique()
-n_s = n_s.reindex(all_states)
-y_s = y_s.reindex(all_states)
+all_regions = pd.Index(list(n_s.index) + list(y_s.index)).unique()
+n_s = n_s.reindex(all_regions)
+y_s = y_s.reindex(all_regions)
 
 with pt.config.change_flags(exception_verbosity='high'):
     with pm.Model() as model:
@@ -45,7 +45,21 @@ print("multilayer model convergence: ")
 print("rows with r_hat > 1.01:", (az.rhat(trace) > 1.01).sum())
 print("rows with ess < 100:", (az.ess(trace) < 100).sum())
 print("rows with ess < 1000:", (az.ess(trace) < 1000).sum())
-az.to_netcdf(trace, 'traces/trace_multilayer.nc')
+az.to_netcdf(trace, 'traces/trace_multilayer_region.nc')
+
+import pandas as pd
+import pymc as pm
+import arviz as az
+import pytensor as pt
+
+df = pd.read_csv('data.csv', keep_default_na=False, na_values=[''])
+
+n_s = df.groupby('region')['totalByRegion_2020'].mean().round(0).astype(int)
+y_s = df['region'].value_counts()
+
+all_regions = pd.Index(list(n_s.index) + list(y_s.index)).unique()
+n_s = n_s.reindex(all_regions)
+y_s = y_s.reindex(all_regions)
 
 with pt.config.change_flags(exception_verbosity='high'):
     with pm.Model() as model:
@@ -69,4 +83,37 @@ print("simple model convergence: ")
 print("rows with r_hat > 1.01:", (az.rhat(trace) > 1.01).sum())
 print("rows with ess < 100:", (az.ess(trace) < 100).sum())
 print("rows with ess < 1000:", (az.ess(trace) < 1000).sum())
-az.to_netcdf(trace, 'traces/trace_simple.nc')
+az.to_netcdf(trace, 'traces/trace_simple_region.nc')
+
+import pandas as pd
+import pymc as pm
+import arviz as az
+import pytensor as pt
+
+df = pd.read_csv('data.csv', keep_default_na=False, na_values=[''])
+
+n_s = df.groupby('region')['totalByRegion_2020'].mean().round(0).astype(int)
+y_s = df['region'].value_counts()
+
+all_regions = pd.Index(list(n_s.index) + list(y_s.index)).unique()
+n_s = n_s.reindex(all_regions)
+y_s = y_s.reindex(all_regions)
+
+a = 2
+b = 2
+
+a_post = a + y_s
+b_post = b + n_s - y_s
+
+post_means = a_post / (a_post + b_post)
+post_vars = (a_post * b_post) / ((a_post + b_post)**2 * (a_post + b_post + 1))
+
+results = pd.DataFrame({
+    'n_s': n_s,
+    'y_s': y_s,
+    'a_post': a_post,
+    'b_post': b_post,
+    'post_mean': post_means,
+    'post_var': post_vars
+})
+print(results)
