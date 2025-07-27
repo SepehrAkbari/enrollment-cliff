@@ -27,20 +27,16 @@ college_explanations = []
 for i in range(X.shape[0]):
     cluster = kmeans_labels[i]
     distances = np.abs(X[i] - centroids[cluster])
-    # Ensure we don't divide by zero
     sum_distances = distances.sum()
     if sum_distances > 0:
-        contributions = distances / sum_distances  # Normalize to get relative impact
+        contributions = distances / sum_distances
     else:
         contributions = np.zeros_like(distances)
     
-    # Get indices of top features
     top_features_idx = np.argsort(contributions)[::-1][:5]
     
-    # Convert feature_names to a list if it's not already
     feature_names_list = feature_names.tolist() if hasattr(feature_names, 'tolist') else list(feature_names)
     
-    # Get top features and their contributions
     top_features = [feature_names_list[idx] for idx in top_features_idx]
     top_contributions = contributions[top_features_idx]
     
