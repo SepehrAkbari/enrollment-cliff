@@ -13,3 +13,4 @@ src/topic_analysis/article_dictionary.gensim
 src/topic_analysis/corpus_tfidf.pkl
 
 summary/presentation/figures
+summary/presentation/*.pptx
