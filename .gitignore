@@ -3,6 +3,9 @@
 .RData
 .Ruserdata
 
+.DS_Store
+*.log
+
 .venv
 
 src/commonality_analysis/cluster_explanations.csv
