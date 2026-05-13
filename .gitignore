@@ -11,3 +11,5 @@ src/reason_analysis/lda_results.csv
 src/topic_analysis/processed_article_content.csv
 src/topic_analysis/article_dictionary.gensim
 src/topic_analysis/corpus_tfidf.pkl
+
+summary/presentation/figures
