@@ -20,3 +20,4 @@ summary/presentation/*.pptx
 summary/presentation/Sepehr-Akbari-Cliff-Panel22-BR254.pdf
 
 data/corpus.py
+data/merger.py
