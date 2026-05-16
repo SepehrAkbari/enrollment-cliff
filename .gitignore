@@ -18,3 +18,5 @@ src/topic_analysis/corpus_tfidf.pkl
 summary/presentation/figures
 summary/presentation/*.pptx
 summary/presentation/Sepehr-Akbari-Cliff-Panel22-BR254.pdf
+
+data/corpus.py
