@@ -1,9 +1,14 @@
+'''
+LDA model for topic modeling
+'''
+
 import pandas as pd
 from gensim.corpora import Dictionary
 from gensim.models import TfidfModel, LdaModel
 import pickle
 import warnings
 warnings.filterwarnings("ignore")
+
 
 df = pd.read_csv("processed_article_content.csv")
 dictionary = Dictionary.load("article_dictionary.gensim")

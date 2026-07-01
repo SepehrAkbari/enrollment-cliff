@@ -1,9 +1,14 @@
+'''
+Building article dataset
+'''
+
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import time
 import warnings
 warnings.filterwarnings("ignore")
+
 
 df = pd.read_excel('media_articles.xlsx')
 df.drop(columns=['UID', 'state', 'yearClosed', 'yearEstablished', 'index'], inplace=True)

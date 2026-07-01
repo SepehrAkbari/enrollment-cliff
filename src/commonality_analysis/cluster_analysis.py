@@ -1,3 +1,7 @@
+'''
+Analysis on clusters
+'''
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,6 +11,7 @@ from preprocess import *
 from cluster import *
 from pca import *
 warnings.filterwarnings("ignore")
+
 
 print(f"Cluster Sizes: \n\n{labels['kmeans_cluster'].value_counts(normalize=True)}")
 

@@ -1,3 +1,7 @@
+'''
+Data preprocessing
+'''
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,6 +11,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 import warnings
 warnings.filterwarnings("ignore")
+
 
 rs = 42
 np.random.seed(rs)

@@ -1,3 +1,7 @@
+'''
+Preprocessing article content
+'''
+
 import pandas as pd
 import re
 import nltk
@@ -11,6 +15,7 @@ import pickle
 import warnings
 from dataset import df
 warnings.filterwarnings("ignore")
+
 
 df.drop(columns=['hed', 'article'], inplace=True)
 

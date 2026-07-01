@@ -1,7 +1,12 @@
+'''
+Two layer bayesian hierarchical model
+'''
+
 import pandas as pd
 import pymc as pm
 import arviz as az
 import pytensor as pt
+
 
 df = pd.read_csv('data.csv', keep_default_na=False, na_values=[''])
 

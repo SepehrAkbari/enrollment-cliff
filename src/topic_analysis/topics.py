@@ -1,8 +1,13 @@
+'''
+Topic visualization
+'''
+
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import warnings
 from model import topics_df
 warnings.filterwarnings("ignore")
+
 
 def visualize_dictionary(word_frequencies_dict):
     wordcloud = WordCloud(width=800, 

@@ -3,21 +3,24 @@
 .RData
 .Ruserdata
 
+__pycache__
+.vscode
+.venv
+
 .DS_Store
 *.log
 
-.venv
+src/risk_analysis/traces/*
+!src/risk_analysis/traces/.gitkeep
 
-src/commonality_analysis/cluster_explanations.csv
-src/commonality_analysis/shap_values.csv
-src/reason_analysis/lda_results.csv
-src/topic_analysis/processed_article_content.csv
-src/topic_analysis/article_dictionary.gensim
-src/topic_analysis/corpus_tfidf.pkl
+draft/*
 
-summary/presentation/figures
-summary/presentation/*.pptx
-summary/presentation/Sepehr-Akbari-Cliff-Panel22-BR254.pdf
+summary/*
+!summary/slides.pdf
 
-data/corpus.py
-data/merger.py
+data/*
+!data/article_txt/
+!data/colleges.csv
+!data/media_articles.csv
+!data/merged.csv
+!data/states.csv

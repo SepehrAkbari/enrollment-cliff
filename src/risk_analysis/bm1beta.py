@@ -1,3 +1,7 @@
+'''
+Bayesian model with neutral prior
+'''
+
 import pandas as pd
 import pymc as pm
 import arviz as az
@@ -5,8 +9,8 @@ import pytensor as pt
 
 df = pd.read_csv('data.csv', keep_default_na=False, na_values=[''])
 
-a = 2 # alpha in Beta(alpha, beta)
-b = 2 # beta in Beta(alpha, beta)
+a = 1 # alpha in Beta(alpha, beta)
+b = 1 # beta in Beta(alpha, beta)
 
 n_s_state = df.groupby('state')['totalByState_2020'].mean().round(0).astype(int)
 y_s_state = df['state'].value_counts()

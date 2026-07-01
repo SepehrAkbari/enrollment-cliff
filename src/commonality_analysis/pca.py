@@ -1,3 +1,7 @@
+'''
+Dimentionality analysis using PCA
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
@@ -7,6 +11,7 @@ import warnings
 from preprocess import *
 from cluster import *
 warnings.filterwarnings("ignore")
+
 
 pca = PCA(random_state=rs)
 X_pca = pca.fit_transform(X)

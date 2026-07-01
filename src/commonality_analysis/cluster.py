@@ -1,3 +1,7 @@
+'''
+K-Means clustering
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -7,6 +11,7 @@ from sklearn.manifold import TSNE
 import warnings
 from preprocess import *
 warnings.filterwarnings("ignore")
+
 
 inertia = []
 k_range = range(2, 40)

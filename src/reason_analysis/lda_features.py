@@ -1,3 +1,7 @@
+'''
+LDA feature importances
+'''
+
 import pandas as pd
 import warnings
 from src.commonality_analysis.preprocess import *
