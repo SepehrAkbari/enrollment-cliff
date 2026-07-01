@@ -19,7 +19,7 @@ summary/*
 !summary/slides.pdf
 
 data/*
-!data/article_txt/
+!data/article_txt/*
 !data/colleges.csv
 !data/media_articles.csv
 !data/merged.csv
